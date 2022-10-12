@@ -1,14 +1,17 @@
 package com.electron.assignment;
 
 /**
- * プログラム名 :Ex001
+ * プログラム名 :Ex006
  * 引数 1 :なし
- * 概要 :名前をプリント
+ * 概要 :for
  * 学籍番号 :22JY0140
  * 名前 :劉　鵬
  */
-public class Ex001 {
+public class Ex007 {
     public static void main(String[] args) {
-        System.out.println("劉　鵬\nりゅう　ほう");
+        int i = 5;
+        while (0 < i--) {
+            System.out.print("*");
+        }
     }
 }
