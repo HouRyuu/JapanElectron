@@ -13,7 +13,7 @@ public class Ex005 {
         int i1      = 5;
         int i2      = 3;
         //　計算
-        double div  = (int) (((double) i1 / i2 + 0.004) * 100) / 100.0;
+        double div  = (int) (((double) i1 / i2 + 0.005) * 100) / 100.0;
         // 結果をプリント
         System.out.println(i1 + "/" + i2 + "=" + div);
     }

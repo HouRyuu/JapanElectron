@@ -9,6 +9,7 @@ package com.electron.assignment;
  */
 public class Ex001 {
     public static void main(String[] args) {
-        System.out.println("劉　鵬\nりゅう　ほう");
+        System.out.println("劉　鵬");
+        System.out.println("りゅう　ほう");
     }
 }
