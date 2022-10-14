@@ -25,6 +25,6 @@ public class Ex003 {
         System.out.println(i1 + " * " + i2 + " = " + times);
         System.out.println(i1 + " / " + i2 + " = " + div);
         System.out.println(i1 + " / " + i2 + " の余りは" + mod1 + "です(余りの演算子不使用)");
-        System.out.println(i1 + " / " + i2 + " の余りは " + mod2 + " です(余りの演算子使用)");
+        System.out.println(i1 + " / " + i2 + " の余りは" + mod2 + "です(余りの演算子使用)");
     }
 }

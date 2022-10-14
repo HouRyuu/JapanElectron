@@ -16,6 +16,6 @@ public class Ex004 {
         double rate     = (double) goodStudent / student * 100;
         // 結果をプリント
         System.out.println("クラス人数" + student + "人の中で出席率が100%の学生"
-                + goodStudent + "人は全体の" + rate + "%です");
+                + goodStudent + "人は全体の" + rate + "%です！");
     }
 }
