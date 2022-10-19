@@ -9,6 +9,7 @@ import java.util.Scanner;
  */
 public class Ex013 {
     public static void main(String[] args) {
+        // 数字の宣言と入力
         Scanner scan = new Scanner(System.in);
         int x, y;
         System.out.print("x を入力してください:");
@@ -16,8 +17,12 @@ public class Ex013 {
         System.out.print("y を入力してください:");
         y = scan.nextInt();
 
-        System.out.println("x + y = " + (x + y));
-        System.out.println("x - y = " + (x - y));
-        System.out.println("x * y = " + (x * y));
+        // 入力された数字で和、差、積を計算しプリント
+        int sum = x + y;
+        int dist = x - y;
+        int times = x * y;
+        System.out.println("x + y = " + sum);
+        System.out.println("x - y = " + dist);
+        System.out.println("x * y = " + times);
     }
 }

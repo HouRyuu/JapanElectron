@@ -1,5 +1,3 @@
-package com.electron.assignment;
-
 /**
  * プログラム名 :Ex003
  * 引数 1 :なし
