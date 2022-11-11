@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * プログラム名 :Ex026
  * 引数 1 :なし
@@ -7,13 +9,16 @@
  */
 public class Ex026 {
     public static void main(String[] args) {
-        int[] scores = new int[]{50, 60, 75, 98, 30};
+        Scanner scan = new Scanner(System.in);
+        int[] scores = new int[5];
         System.out.println("これから5人のJavaテストの点数を読み込みます!");
-        int score, max = scores[0], min = scores[0];
-        double sum = 0.0, avg;
         for (int i = 0; i < scores.length; i++) {
             System.out.println(i + 1 + "人目：");
-            System.out.println(score = scores[i]);
+            scores[i] = scan.nextInt();
+        }
+        double sum = 0.0, avg;
+        int max = scores[0], min = scores[0];
+        for (int score : scores) {
             sum += score;
             if (max < score) {
                 max = score;

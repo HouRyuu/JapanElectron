@@ -15,12 +15,12 @@ public class Ex032 {
         System.out.println("3人目のサイズは" + selectSize(height3) + "です");
     }
 
-    private static String selectSize(int height1) {
+    private static char selectSize(int height1) {
         if (height1 >= 170) {
-            return "L";
+            return 'L';
         } else if (height1 >= 150) {
-            return "M";
+            return 'M';
         }
-        return "S";
+        return 'S';
     }
 }
