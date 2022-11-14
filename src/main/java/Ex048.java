@@ -8,12 +8,14 @@
 public class Ex048 {
 
     public static void main(String[] args) {
-        Robot3 robot = new Robot3(60.0, 18.0, "ガンダム");
-        robot.showSpec();
-        Robot3 robot1 = new Robot3(0.23, 1.8, "ASIMO");
-        robot1.showSpec();
-        Robot3 robot2 = new Robot3(1.0, 1.5, "ロボコン");
-        robot2.showSpec();
+        Robot3[] robots = new Robot3[]{
+                new Robot3(60.0, 18.0, "ガンダム"),
+                new Robot3(0.23, 1.8, "ASIMO"),
+                new Robot3(1.0, 1.5, "ロボコン")
+        };
+        for (Robot3 robot : robots) {
+            robot.showSpec();
+        }
     }
 }
 
