@@ -21,10 +21,10 @@ public class Ex049 {
 }
 
 class Person {
-    String name;
-    char gender;
-    double height;
-    double weight;
+    private String name;
+    private char gender;
+    private double height;
+    private double weight;
 
     public Person() {
     }

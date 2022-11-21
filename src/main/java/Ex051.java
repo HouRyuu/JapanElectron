@@ -20,15 +20,15 @@ public class Ex051 {
     }
 
     static void printData(Person2 person) {
-        System.out.println(person.name + "(" + person.gender + ")：" + person.height + "cm, " + person.weight + "kg");
+        System.out.println(person.getName() + "(" + person.getGender() + ")：" + person.getHeight() + "cm, " + person.getWeight() + "kg");
     }
 }
 
 class Person2 {
-    String name;
-    char gender;
-    double height;
-    double weight;
+    private String name;
+    private char gender;
+    private double height;
+    private double weight;
 
     public Person2() {
     }
@@ -48,4 +48,19 @@ class Person2 {
         setData("名無しのごんべい", '?');
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
 }

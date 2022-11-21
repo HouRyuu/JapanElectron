@@ -18,10 +18,10 @@ public class Ex053 {
 }
 
 class Person4 {
-    String name;
-    char gender;
-    double height;
-    double weight;
+    private String name;
+    private char gender;
+    private double height;
+    private double weight;
 
     public Person4() {
         this("名無しのごんべい", '?');
