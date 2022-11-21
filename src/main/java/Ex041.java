@@ -9,11 +9,10 @@ public class Ex041 {
 
     public static void main(String[] args) {
         PlasticBottle pb = new PlasticBottle();
-        pb.size = 500;
-        pb.nokori = 500;
         pb.show();
         new PlasticBottle(100).show();
         new PlasticBottle(350, 200).show();
+
     }
 }
 
@@ -22,6 +21,8 @@ class PlasticBottle {
     int nokori;
 
     PlasticBottle() {
+        size = 500;
+        nokori = 500;
     }
 
     PlasticBottle(int ml) {
