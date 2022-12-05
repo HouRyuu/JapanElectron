@@ -30,14 +30,14 @@ class Person1 {
     }
 
     public void setData(String name, char gender, double height, double weight) {
-        this.name = name;
-        this.gender = gender;
+        setData(name, gender);
         this.height = height;
         this.weight = weight;
     }
 
     public void setData(String name, char gender) {
-        setData(name, gender, 0.0, 0.0);
+        this.name = name;
+        this.gender = gender;
     }
 
     public void setData() {
