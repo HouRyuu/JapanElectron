@@ -6,25 +6,22 @@
  */
 public class Ex059 {
     public static void main(String[] args) {
-        Robot4 first = new Robot4("EVA-01", 1);
+        Robot4 first = new Robot4("EVA-01");
         first.showName();
-        first.showCount();
-        Robot4 second = new Robot4("AV98", 2);
+        Robot4.showCount();
+        Robot4 second = new Robot4("AV98");
         second.showName();
-        second.showCount();
+        Robot4.showCount();
     }
 }
 
 class Robot4 {
     private String name;
-    private int count;
+    private static int count;
 
-    public Robot4() {
-    }
-
-    public Robot4(String name, int count) {
+    public Robot4(String name) {
         this.name = name;
-        this.count = count;
+        count++;
     }
 
     public String getName() {
@@ -35,19 +32,11 @@ class Robot4 {
         this.name = name;
     }
 
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
     void showName() {
         System.out.println("ロボット：" + this.name);
     }
 
-    void showCount() {
-        System.out.println("ロボットの製造台数：" + this.count);
+    static void showCount() {
+        System.out.println("ロボットの製造台数：" + count);
     }
 }

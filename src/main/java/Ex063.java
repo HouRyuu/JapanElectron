@@ -13,7 +13,7 @@ public class Ex063 {
         PlasticBottle2[] pbs = new PlasticBottle2[PLASTIC_BOTTLE_NUM];
         Random random = new Random();
         for (int i = 0; i < PLASTIC_BOTTLE_NUM; i++) {
-            pbs[i] = new PlasticBottle2(500, random.nextInt(500));
+            pbs[i] = new PlasticBottle2(500, random.nextInt(501));
         }
         for (PlasticBottle2 pb : pbs) {
             if (pb.getNokori() >= 400) {
