@@ -12,7 +12,7 @@ public class Ex080 {
                 new CurrySet1(300, "ラッシー")
         };
         for (CurrySet1 currySet : currySets) {
-            currySet.showGram();
+            currySet.showCurry();
             currySet.showDrink();
         }
     }
@@ -25,7 +25,7 @@ class Curry2 {
         this.gram = gram;
     }
 
-    public void showGram() {
+    public void showCurry() {
         System.out.println("カレー:" + this.gram + "g");
     }
 }

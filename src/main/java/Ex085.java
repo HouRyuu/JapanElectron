@@ -14,15 +14,15 @@ public class Ex085 {
                 new SportsCar2("MR-S", 55000, 185),
                 new SportsCar2("フェアレディZ", 2200, 175)
         };
-        for (Car7 car : cars) {
-            if (car instanceof SportsCar2) {
-                print(car);
-            }
-        }
+        print(cars);
     }
 
-    static void print(Car7 car) {
-        car.printData();
+    static void print(Car7[] cars) {
+        for (Car7 car : cars) {
+            if (car instanceof SportsCar2) {
+                car.printData();
+            }
+        }
     }
 }
 
