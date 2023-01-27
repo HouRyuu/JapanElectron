@@ -27,14 +27,13 @@ public class Ex071 {
         str3 = str2.toString();
         endT2 = System.nanoTime();
         System.out.println(endT2 - startT2 + "(ns)");
-        /**
-         * 実行結果：
-         * 1179800(ns)
-         * 58800(ns)
-         * 原因：
-         * Stringのconcatメソッドで文字列を連結するのはnewで新しい文字列を作って、メモリの配分には時間がかかります
-         * StringBuilderのappendメソッドはSystem.arraycopy()を使って二つの配列を結合するので、newの方より早いです
-         */
     }
-
 }
+/**
+ * 実行結果：
+ * 1179800(ns)
+ * 58800(ns)
+ * 原因：
+ * Stringのconcatメソッドで文字列を連結するのはnewで新しい文字列を作って、メモリの配分には時間がかかります
+ * StringBuilderのappendメソッドはSystem.arraycopy()を使って二つの配列を結合するので、newの方より早いです
+ */
