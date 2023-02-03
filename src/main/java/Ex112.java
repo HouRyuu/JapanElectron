@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class Ex112 {
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<String>();
         Scanner scan = new Scanner(System.in);
         String name;
         System.out.print("名前入力：");

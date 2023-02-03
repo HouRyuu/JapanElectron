@@ -14,7 +14,7 @@ public class Ex103 {
         try {
             System.out.println(ary[index]);
         } catch (ArrayIndexOutOfBoundsException ex) {
-            System.out.println("java.lang.ArrayIndexOutOfBoundsException: " + index);
+            System.out.println(ex);
         }
     }
 }
